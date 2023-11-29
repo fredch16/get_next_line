@@ -6,7 +6,7 @@
 /*   By: fcharbon <fcharbon@student.42london.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 21:16:42 by fcharbon          #+#    #+#             */
-/*   Updated: 2023/11/29 21:16:45 by fcharbon         ###   ########.fr       */
+/*   Updated: 2023/11/29 22:08:34 by fcharbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int	ft_strlenm(char const *s1)
 		if (s1[i] == '\n')
 			return (i + 1);
 		i++;
-	
+	}
 	return (i);
 }
 
