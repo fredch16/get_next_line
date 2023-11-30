@@ -6,7 +6,7 @@
 /*   By: fcharbon <fcharbon@student.42london.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 21:15:54 by fcharbon          #+#    #+#             */
-/*   Updated: 2023/11/29 21:15:57 by fcharbon         ###   ########.fr       */
+/*   Updated: 2023/11/30 02:22:35 by fcharbon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,17 +60,18 @@ char	*get_next_line(int fd)
 // 	close(fd1);
 //=     return (0);
 // }
-/*
-int	main(void)
+#include <errno.h>
+/*int	main(void)
 {
 	char	*line;
 	int		fd1;
 
-	fd1 = open("myfile.txt", O_RDONLY);
+	//fd1 = open("myfile.txt", O_RDONLY);
+	fd1 = open("mypoop.txt", O_RDONLY);
 	if (fd1 == -1)
 	{
 		perror("Error opening file");
-		return (1);
+		return (0);
 	}
 		while ((line = get_next_line(fd1)) != NULL)
 		{
